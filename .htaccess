@@ -5,7 +5,7 @@ Deny from all
 </FilesMatch>
 
 RewriteEngine on
-RewriteRule start Daftpunk.html
+RewriteRule start index.html
 RewriteRule daft-album1 album1.html
 RewriteRule daft-album2 album2.html
 RewriteRule daft-historia historia.html

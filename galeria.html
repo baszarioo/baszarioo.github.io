@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- poprawia funkcjonowanie na zarówno dużych jak i małych urządzeniach-->
+	<title>Daft Punk - strona fanowska</title>
+	<meta name="description" content="Fanowska strona o francuskim duecie muzyki elektronicznej - Daft Punk">
+	<meta name="keywords" content="Daft Punk, Duet, Muzyka elektroniczna, muzycy w kaskach, funk, house, disco" />
+	<meta name="author" content="313078">
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="second.css" />
+	<link rel="stylesheet" href="css/fontello.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato&display=swap" rel="stylesheet">
+	<link href="https://fontss.googleapis.com/css?family=Open+Sans;400,700&amp;subset=latin-ext" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+	<script src="timer.js"></script>
+	 <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+	
+</head>
+
+<body onload="odliczanie();">
+
+	<header>
+		<div id="container" style="height: 307px" >
+        <nav class="navbar navbar-dark bg-* navbar-expand-lg">
+            <a class="navbar-brand bg-secondary" href="start"><img src="img/DaftPunk.png" alt="" height="48px"
+                class="d-inline-block mr-1 align-bottom"></a>
+                
+            <button class="navbar-toggler bg-secondary" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false"
+                aria-label="Nav Switch">
+                <span class="navbar-toggler-icon"></span>
+            </button>    
+            <!-- ten toggler z automatu ustawia się do prawej strony! -->
+
+            <div class="collapse navbar-collapse bg-secondary" id="mainmenu">
+                <ul class="navbar-nav mr-auto">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="start"> Start </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#" data-toggle="dropdown" role="button"
+                        aria-expanded="false" aria-haspopup="true"> Albumy </a>
+                        
+                        <div class="dropdown-menu" aria-labelledby="submenu">
+                            <a class="dropdown-item" href="daft-album1">Homework (1997)</a>
+							<a class="dropdown-item" href="daft-album2">Discovery (2001)</a>
+
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="daft-historia"> Historia </a>
+                    </li>
+                    
+                    <li class="nav-item active">
+                        <a class="nav-link" href="daft-zdjecia"> Zdjęcia </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link disabled"> Kontakt </a>
+                    </li>
+                </ul>
+						<div id="zegar">12:00:00</div>	
+        </nav>
+		</div>
+    </header>
+
+
+
+	<main>
+        <article>
+			<div class="start">
+			<h1>📸 GALERIA 📸</h1>
+                <div class="center">
+						<div class="images">
+							<div class="slide img1"><img src="img/use.png"></div>
+							<div class="slide img2"><img src="img/use2.png"></div>	
+							<div class="slide img3"><img src="img/use6.png"></div>
+							<div class="slide img4"><img src="img/use4.png"></div>
+							<div class="slide img5"><img src="img/use5.png"></div>
+							<div class="slide img6"><img src="img/use1.png"></div>
+							<div class="slide img7"><img src="img/use7.png"></div>
+						</div>
+
+						<div class="buttons">
+							<a href="javascript:void(0);" class="btn1 active"></a>
+							<a href="javascript:void(0);" class="btn2"></a>
+							<a href="javascript:void(0);" class="btn3"></a>
+							<a href="javascript:void(0);" class="btn4"></a>
+							<a href="javascript:void(0);" class="btn5"></a>
+							<a href="javascript:void(0);" class="btn6"></a>
+							<a href="javascript:void(0);" class="btn7"></a>
+					
+						</div>
+				</div>
+					<script>
+						$(document).ready(function(){
+							$('.btn1').click(function(){
+								$('.img1').css("marginLeft","0");
+							});
+							$('.btn2').click(function(){
+								$('.img1').css("marginLeft","-20%");
+							});
+							$('.btn3').click(function(){
+								$('.img1').css("marginLeft","-40%");
+							});
+							$('.btn4').click(function(){
+								$('.img1').css("marginLeft","-60%");
+							});
+							$('.btn5').click(function(){
+								$('.img1').css("marginLeft","-80%");
+							});
+							$('.btn6').click(function(){
+								$('.img1').css("marginLeft","-100%");
+							});
+							$('.btn7').click(function(){
+								$('.img1').css("marginLeft","-120%");
+							});				
+							$('a').click(function(){
+								$(this).addClass('active').siblings()
+									.removeClass('active');
+							});
+						});
+					</script>
+				</div>
+		</article>
+	</main>
+
+	<script src="jquery-1.11.3.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	
+	<script src="js/bootstrap.min.js"></script>
+	
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+### PROTECT FILES ###
+<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|sh)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+RewriteEngine on
+
+RewriteRule daft-album1 album1.html
+RewriteRule daft-album2 album2.html
+RewriteRule daft-historia kontakt.html
+RewriteRule daft-zdjecia plany.html
+RewriteRule daft-nagrody plany.html
